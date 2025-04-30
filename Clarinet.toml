@@ -1,0 +1,19 @@
+[project]
+name = 'stacks-community-treasury'
+description = ''
+authors = []
+telemetry = true
+cache_dir = '.\.cache'
+requirements = []
+[contracts.stacks-community-treasury]
+path = 'contracts/stacks-community-treasury.clar'
+clarity_version = 3
+epoch = 3.1
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
